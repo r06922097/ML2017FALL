@@ -9,7 +9,7 @@ pixels = outputIm.load()
 
 for i in range(width):
 	for j in range(height):
-		dividedByTwo = tuple(element/2 for element in rgb_im.getpixel((i,j)))
+		dividedByTwo = tuple(element//2 for element in rgb_im.getpixel((i,j)))
 		pixels[i,j] = dividedByTwo
 
 outputIm.save( "Q2.jpg" )
