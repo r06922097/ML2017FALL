@@ -12,4 +12,4 @@ for i in range(width):
 		dividedByTwo = tuple(element//2 for element in rgb_im.getpixel((i,j)))
 		pixels[i,j] = dividedByTwo
 
-outputIm.save( "Q2.jpg" )
+outputIm.save( "Q2.png" )
