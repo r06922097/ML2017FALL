@@ -45,12 +45,10 @@ weight = np.dot(U.T,target_img-X_mean)
 # # io.imshow(average)
 # # io.show()
 
-# reconstruction = U[:,3]
 reconstruction = np.zeros(1080000)
 for i in range(4):
     reconstruction = reconstruction + weight[i]*U[:,i]
 
-reconstruction /= 4
 reconstruction = reconstruction.reshape(1080000,1)
 reconstruction = reconstruction + X_mean
 reconstruction -= np.min(reconstruction)
